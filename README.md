@@ -3,13 +3,14 @@
 ## Usage
 
 First, download the file to your computer. Open Terminal and cd into the appropriate location. Make the file executable:
-` sudo chmod +x linux-post-install.sh `
-
+```
+sudo chmod +x *-postinstall-script.sh 
+```
 
 Run the file:
-
-` ./linux-post-install.sh `
-
+```
+./*-postinstall-script.sh 
+```
 
 ## To-Do
 
