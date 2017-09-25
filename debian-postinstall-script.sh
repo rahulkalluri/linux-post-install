@@ -1,4 +1,9 @@
-#!/bin/sh
+#!/bin/bash
+#
+# Make my life a little easier.
+#
+# Author
+#   Rahul Kalluri 
 
 # add all the appropriate repositories and keys 
 
@@ -20,24 +25,18 @@ sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
 
 # install apps
-sudo apt-get  -y install \
-
-# tools
-nano neovim git sublime-test-installer curl terminator firmware-iwlwifi neofetch tlp tlp-rdw tp-smapi-dkms acpi-call-dkms caffeine dpkg enpass fluxgui \
-
-taskwarrior googler  \
-# data science
-mongodb-compass python3 python3-pip python3-neovim r-base r-base-dev openjdk-8-jdk \
-
-#media
-rtv spotify-client vlc browser-plugin-vlc \
-
-#theming
-arc-theme paper-icon-theme paper-cursor-theme
+sudo apt-get -y --allow-unauthenticated install \
+	nano neovim git sublime-text-installer curl terminator firmware-iwlwifi neofetch tlp tlp-rdw tp-smapi-dkms acpi-call-dkms \
+	caffeine dpkg enpass fluxgui \
+	taskwarrior googler git-gui  \
+	mongodb-compass python3 python3-pip python3-neovim r-base r-base-dev openjdk-8-jdk \
+	rtv spotify-client deluge vlc browser-plugin-vlc \
+	arc-theme paper-icon-theme paper-cursor-theme
 
 
-pip3 install -U git+https://github.com/mps-youtube/mps-youtube.git
-pip3 install dbus-python pygobject 
+# Install MPS-YT and dependencies
+sudo pip3 install -U git+https://github.com/mps-youtube/mps-youtube.git
+sudo pip3 install dbus-python pygobject
 
 
 # prompt for a reboot
