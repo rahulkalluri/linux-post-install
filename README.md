@@ -1,6 +1,6 @@
-sudo chmod +x# Linux Post-Install Scripts  
+# Linux Post-Install Scripts  
 
-## Usagesudo chmod +x
+## Usage
 
 First, download the file to your computer. Open Terminal and cd into the appropriate location. Make the file executable:
 ` sudo chmod +x linux-post-install.sh `
