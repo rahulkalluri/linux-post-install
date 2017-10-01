@@ -21,7 +21,7 @@ echo "deb http://repo.mongodb.com/apt/debian jessie/mongodb-enterprise/3.4 main"
 sudo apt-key adv --keyserver subkeys.pgp.net --recv-key 381BA480
 
 # repository for mps-youtube
-sudo add-apt-repository -y ppa:snwh/pulp 
+sudo add-apt-repository -y ppa:snwh/pulp
 
 # spotify
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 0DF731E45CE24F27EEEB1450EFDC8610341D9410 
