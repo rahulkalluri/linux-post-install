@@ -11,6 +11,12 @@
 # R
 sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/debian jessie-cran3/" >> /etc/apt/sources.list'
 sudo add-apt-repository -y ppa:marutter/rrutter
+
+# MongoDB enterprise 
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+echo "deb http://repo.mongodb.com/apt/debian jessie/mongodb-enterprise/3.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-enterprise.list
+
+
 # Adds the CRAN GPG key, which is used to sign the R packages for security.
 sudo apt-key adv --keyserver subkeys.pgp.net --recv-key 381BA480
 
@@ -36,8 +42,8 @@ sudo apt-get -y --allow-unauthenticated install \
 	taskwarrior googler git-gui  \
 	
 	# data science
-	mongodb-compass python3 python3-pip python3-neovim r-base r-base-dev openjdk-8-jdk \
-	
+	mongodb-compass python3 python3-pip python3-neovim r-base r-base-dev openjdk-8-jdk mongodb-enterprise \
+		
 	# media
 	rtv spotify-client deluge vlc browser-plugin-vlc \
 	
